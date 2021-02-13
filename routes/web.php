@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('root', 'RootController');
+Route::resource('character', 'CharacterController');
+Route::resource('radical', 'RadicalController');
