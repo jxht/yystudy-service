@@ -19,4 +19,6 @@ Route::get('/', function () {
 
 Route::resource('root', 'RootController');
 Route::resource('character', 'CharacterController');
-Route::resource('radical', 'RadicalController');
+//Route::resource('radical', 'RadicalController');
+
+Route::any('radical/type-list','RadicalController@typeList');

@@ -13,7 +13,7 @@ class RadicalController extends Controller
      */
     public function index()
     {
-        //
+        return  "ddd";
     }
 
     /**
@@ -80,5 +80,21 @@ class RadicalController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function typeList(){
+        $a= '{"ret":1,"data":[{ "id": 1, "name": "水与山" },
+  { "id": 2, "name": "植物" },
+  { "id": 3, "name": "人和人类" },
+  { "id": 4, "name": "家畜野生动物" },
+  { "id": 5, "name": "衣服" },
+  { "id": 6, "name": "房子屋顶" },
+  { "id": 7, "name": "器皿容器" },
+  { "id": 8, "name": "打猎" },
+  { "id": 9, "name": "农耕" },
+  { "id": 10, "name": "语言法律" },
+  { "id": 11, "name": "历法" },
+  { "id": 12, "name": "其他" }]}';
+        return $a;
     }
 }
